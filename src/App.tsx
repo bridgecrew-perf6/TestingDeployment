@@ -1,4 +1,4 @@
-import {Children, useEffect, useState} from 'react';
+import { useEffect, useState} from 'react';
 import './App.css';
 import Form from './Components/Form';
 import List from './Components/List';
@@ -21,7 +21,6 @@ const initial_State = [
 ]
 function App() {
   const [subs, setSubs] = useState<Array<Sub>>([])
-  const [newSubsNumber,setNewSubsNumber] = useState<any>(0)
   
   useEffect(()=>{
     setSubs(initial_State)
